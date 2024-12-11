@@ -1,0 +1,20 @@
+# Superclass 1
+class SmartDevice:
+    def connect(self):
+        return "Connecting to network."
+
+# Superclass 2
+class Camera:
+    def take_photo(self):
+        return "Taking a photo."
+
+# Subclass yang menggabungkan dua superclass
+class Smartphone(SmartDevice, Camera):
+    def call(self):
+        return "Making a call."
+
+# Pengujian
+phone = Smartphone()
+print(phone.connect())     # Output: Connecting to network.
+print(phone.take_photo())  # Output: Taking a photo.
+print(phone.call())        # Output: Making a call.
